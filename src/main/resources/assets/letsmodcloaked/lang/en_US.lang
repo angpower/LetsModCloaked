@@ -1,0 +1,28 @@
+
+
+# Item localizations
+item.letsmodcloaked:mapleLeaf.name=Maple Leaf of Awesomeness
+item.letsmodcloaked:copper_ingot.name=Copper Ingot
+item.letsmodcloaked:vanadium_pickaxe.name=Vanadium Pickaxe
+
+
+
+# Block localizations
+tile.letsmodcloaked:copper_ore.name=Copper Ore
+tile.letsmodcloaked:tin_ore.name=Tin Ore
+tile.letsmodcloaked:manganese_ore.name=Manganese Ore
+tile.letsmodcloaked:vanadium_ore.name=Vanadium Ore
+tile.letsmodcloaked:rhodium_ore.name=Rhodium Ore
+tile.letsmodcloaked:peridium_ore.name=Peridium Ore
+
+tile.letsmodcloaked:flag.name=Dutch Flag of Awesomeness
+tile.letsmodcloaked:bomb.name=Super Bomb
+tile.letsmodcloaked:copper_block.name=Copper Block
+
+tile.letsmodcloaked:stonefurnace.name=Stone Furnace
+
+
+
+
+# CreativeTabs localizations
+itemGroup.letsmodcloaked=Let's Mod Cloaked

@@ -1,0 +1,21 @@
+[
+{
+  "modid": "LetsModCloaked",
+  "name": "Lets Mod Cloaked",
+  "description": "Angpower's First Mod !",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Angpower"
+  ],
+  "credits": "Angpower",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
