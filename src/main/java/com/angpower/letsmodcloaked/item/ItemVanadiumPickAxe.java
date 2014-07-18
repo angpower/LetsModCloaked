@@ -7,6 +7,7 @@ public class ItemVanadiumPickAxe extends ItemLMC
     {
         super();
         this.setUnlocalizedName("vanadium_pickaxe");
+        this.setTextureName("vanadium_pickaxe");
         this.setMaxStackSize(1);
         this.setNoRepair();
     }

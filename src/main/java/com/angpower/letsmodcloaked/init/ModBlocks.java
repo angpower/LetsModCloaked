@@ -19,7 +19,7 @@ public class ModBlocks
     public static final BlockLMC peridium_ore = new BlockPeridiumOre();
 
     // Deco blocks
-    public static final BlockLMC flag = new BlockFlag();
+    public static final BlockLMC aludel = new BlockAludel();
     public static final BlockLMC bomb = new BlockBomb();
     public static final BlockLMC copper_block = new BlockCopperBlock();
 
@@ -41,11 +41,13 @@ public class ModBlocks
         GameRegistry.registerBlock(peridium_ore, "peridium_ore");
 
         //Deco blocks
-        GameRegistry.registerBlock(flag, "flag");
+
         GameRegistry.registerBlock(bomb, "bomb");
         GameRegistry.registerBlock(copper_block, "copper_block");
 
         //tile entity's
+        GameRegistry.registerBlock(aludel, "Aludel");
         GameRegistry.registerBlock(stonefurnace, "stonefurnace");
+
     }
 }

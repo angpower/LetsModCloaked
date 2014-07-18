@@ -6,5 +6,6 @@ public class ItemCopperIngot extends ItemLMC
     {
         super();
         this.setUnlocalizedName("copper_ingot");
+        this.setTextureName("copper_ingot");
     }
 }

@@ -11,7 +11,9 @@ public class ModItems
     public static final ItemLMC mapleleaf = new ItemMapleLeaf();
     public static final ItemLMC copper_ingot = new ItemCopperIngot();
     public static final ItemLMC vanadium_ingot = new ItemVanadiumIngot();
+    public static final ItemLMC tin_ingot = new ItemTinIngot();
     public static final ItemLMC vanadium_pickaxe = new ItemVanadiumPickAxe();
+    public static final ItemLMC tin_cog = new ItemTinCog();
 
     public static void init()
 
@@ -21,6 +23,8 @@ public class ModItems
         GameRegistry.registerItem(mapleleaf, "mapleleaf");
         GameRegistry.registerItem(copper_ingot, "copper_ingot");
         GameRegistry.registerItem(vanadium_ingot, "vanadium_ingot");
+        GameRegistry.registerItem(tin_ingot, "tin_ingot");
         GameRegistry.registerItem(vanadium_pickaxe, "vanadium_pickaxe");
+        GameRegistry.registerItem(tin_cog, "tin_cog");
     }
 }
