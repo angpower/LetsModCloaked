@@ -9,6 +9,9 @@ item.letsmodcloaked:tin_cog.name=Tin Cog
 item.letsmodcloaked:copper_ingot.name=Copper Ingot
 item.letsmodcloaked:vanadium_ingot.name=Vanadium Ingot
 item.letsmodcloaked:tin_ingot.name=Tin Ingot
+item.letsmodcloaked:manganese_ingot.name=Manganese Ingot
+item.letsmodcloaked.peridium.name=Peridium
+item.letsmodcloaked.rhodium.name=Rhodium
 
 # Tools
 item.letsmodcloaked:vanadium_pickaxe.name=Vanadium Pickaxe

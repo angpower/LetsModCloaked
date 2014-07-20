@@ -25,5 +25,8 @@ public class Recipes {
         //Smelting Recipes
         GameRegistry.addSmelting(new ItemStack(ModBlocks.copper_ore), new ItemStack(ModItems.copper_ingot, 1), 0);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.vanadium_ore), new ItemStack(ModItems.vanadium_ingot, 1), 0);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.tin_ore), new ItemStack(ModItems.tin_ingot, 1), 0);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.manganese_ore), new ItemStack(ModItems.manganese_ingot, 1), 0);
+
     }
 }
