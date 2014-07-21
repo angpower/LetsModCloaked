@@ -1,6 +1,12 @@
 package com.angpower.letsmodcloaked.block;
 
 
+import com.angpower.letsmodcloaked.init.ModBlocks;
+import com.angpower.letsmodcloaked.init.ModItems;
+import net.minecraft.item.Item;
+
+import java.util.Random;
+
 public class BlockPeridiumOre extends BlockLMC
 {
     public BlockPeridiumOre()
@@ -12,4 +18,15 @@ public class BlockPeridiumOre extends BlockLMC
         this.setResistance(5F);
         this.setStepSound(soundTypeStone);
     }
+
+    public Item getItemDropped(int i, Random random, int j)
+    {
+        return this == ModBlocks.peridium_ore ? ModItems.peridium : Item.getItemFromBlock(this);
+    }
+
+    public int quantityDropped(Random random)
+    {
+        return this == ModBlocks.peridium_ore ? 4 + random.nextInt(5) : 1;
+    }
+
 }
