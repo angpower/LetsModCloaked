@@ -184,7 +184,14 @@
     </group>
   </component>
   <component name="ProjectDictionaryState">
-    <dictionary name="angpower" />
+    <dictionary name="angpower">
+      <words>
+        <w>chestplate</w>
+        <w>mapleleaf</w>
+        <w>peridium</w>
+        <w>pickaxe</w>
+      </words>
+    </dictionary>
   </component>
   <component name="ProjectModuleManager">
     <modules>

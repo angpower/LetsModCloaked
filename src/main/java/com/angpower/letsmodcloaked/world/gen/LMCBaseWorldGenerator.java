@@ -29,8 +29,7 @@ public class LMCBaseWorldGenerator implements IWorldGenerator
     }
 
     private void generateSurface(World world, Random random, int x, int z) {
-        //this.addOreSpawn(ModBlocks.orewhatever, world , random, x=blockXpos, z=blockZpos, maxX, maxZ, maxVeinSize,
-        //change to Spawn ,minY, maxY
+        //this.addOreSpawn(ModBlocks.ore Whatever, world , random, x=blockXpos, z=blockZpos, maxX, maxZ, maxVeinSize,change to Spawn ,minY, maxY
         this.addOreSpawn(ModBlocks.copper_ore, world, random, x, z, 16, 16, 4+random.nextInt(6), 30, 38, 90);
         this.addOreSpawn(ModBlocks.tin_ore, world, random, x, z, 16, 16, 4+random.nextInt(6), 25, 48, 100);
         this.addOreSpawn(ModBlocks.vanadium_ore, world, random, x, z, 16, 16, 4+random.nextInt(6), 30, 10, 100);//10 10 20
@@ -46,12 +45,12 @@ public class LMCBaseWorldGenerator implements IWorldGenerator
         //auto generated ore's in the end
     }
 
-    private void addOreSpawn(BlockLMC blockLMC, World world, Random random, int blockXPos, int blockzPos, int maxX, int maxZ, int maxVeinSize, int changeToSpawn, int minY, int maxY)
+    private void addOreSpawn(BlockLMC blockLMC, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int changeToSpawn, int minY, int maxY)
     {
         for(int  i = 0; i < changeToSpawn; i++) {
             int posX = blockXPos + random.nextInt(maxX);
             int posY = minY + random.nextInt(maxY - minY);
-            int posZ = blockzPos + random.nextInt(maxZ);
+            int posZ = blockZPos + random.nextInt(maxZ);
             (new WorldGenMinable(blockLMC, maxVeinSize)).generate(world, random, posX, posY, posZ);
         }
     }

@@ -15,8 +15,18 @@ item.letsmodcloaked:rhodium.name=Rhodium
 
 # Tools
 item.letsmodcloaked:vanadium_pickaxe.name=Vanadium Pickaxe
+item.letsmodcloaked:vanadium_shovel.name=Vanadium Shovel
+item.letsmodcloaked:vanadium_axe.name=Vanadium Axe
+item.letsmodcloaked:vanadium_hoe.name=Vanadium Hoe
 
 # Weapons
+item.letsmodcloaked:vanadium_sword.name=Vanadium Sword
+
+# Armor
+item.letsmodcloaked:vanadium_helmet.name=Vanadium Helmet
+item.letsmodcloaked:vanadium_chestplate.name=Vanadium Chestplate
+item.letsmodcloaked:vanadium_leggings.name=Vanadium Leggings
+item.letsmodcloaked:vanadium_boots.name=Vanadium Boots
 
 # Blocks
 tile.letsmodcloaked:copper_ore.name=Copper Ore

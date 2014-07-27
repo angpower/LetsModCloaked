@@ -1,6 +1,8 @@
 package com.angpower.letsmodcloaked;
 
 import com.angpower.letsmodcloaked.handler.ConfigurationHandler;
+import com.angpower.letsmodcloaked.handler.CraftingHandler;
+import com.angpower.letsmodcloaked.handler.FuelHandler;
 import com.angpower.letsmodcloaked.init.ModBlocks;
 import com.angpower.letsmodcloaked.init.ModItems;
 import com.angpower.letsmodcloaked.init.Recipes;
@@ -15,6 +17,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid= Reference.MOD_ID, name= Reference.MOD_NAME, version= Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class LetsModCloaked
@@ -46,8 +50,10 @@ public class LetsModCloaked
         //register tile entities
 
         //register crafting recipes
+        FMLCommonHandler.instance().bus().register(new CraftingHandler());
         Recipes.init();
         //general event handling
+        GameRegistry.registerFuelHandler(new FuelHandler());
         GameRegistry.registerWorldGenerator(new LMCBaseWorldGenerator(), 0);
         LogHelper.info("Initialization Compleet!");
     }

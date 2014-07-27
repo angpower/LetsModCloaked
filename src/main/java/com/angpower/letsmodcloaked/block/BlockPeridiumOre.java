@@ -26,7 +26,7 @@ public class BlockPeridiumOre extends BlockLMC
 
     public int quantityDropped(Random random)
     {
-        return this == ModBlocks.peridium_ore ? 4 + random.nextInt(5) : 1;
+        return 3;
     }
 
 }
