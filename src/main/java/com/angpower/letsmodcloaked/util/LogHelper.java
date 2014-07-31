@@ -1,4 +1,4 @@
-package com.angpower.letsmodcloaked.utility;
+package com.angpower.letsmodcloaked.util;
 
 import com.angpower.letsmodcloaked.reference.Reference;
 import cpw.mods.fml.common.FMLLog;

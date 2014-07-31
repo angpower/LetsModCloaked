@@ -1,5 +1,6 @@
 package com.angpower.letsmodcloaked.item;
 
+import com.angpower.letsmodcloaked.reference.Names;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -12,9 +13,8 @@ public class ItemMapleLeaf extends  ItemLMC
 
     {
         super();
-        this.setUnlocalizedName("mapleLeaf");
         // name used for texture
-        this.setTextureName("mapleleaf");
+        this.setUnlocalizedName(Names.Items.MAPLE_LEAF);
         this.maxStackSize = 1;
         this.setMaxDamage(10);
     }

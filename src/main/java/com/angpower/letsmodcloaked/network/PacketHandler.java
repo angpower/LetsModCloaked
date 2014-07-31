@@ -1,5 +1,6 @@
 package com.angpower.letsmodcloaked.network;
 
+import com.angpower.letsmodcloaked.network.message.MessageTileEntityAludel;
 import com.angpower.letsmodcloaked.network.message.MessageTileEntityLMC;
 import com.angpower.letsmodcloaked.reference.Reference;
 import cpw.mods.fml.common.network.NetworkRegistry;
@@ -13,8 +14,8 @@ public class PacketHandler
     public static void init()
     {
         INSTANCE.registerMessage(MessageTileEntityLMC.class, MessageTileEntityLMC.class, 0, Side.CLIENT);
-        //INSTANCE.registerMessage(MessageTileCalcinator.class, MessageTileCalcinator.class, 1, Side.CLIENT);
-       // INSTANCE.registerMessage(MessageTileEntityAludel.class, MessageTileEntityAludel.class, 2, Side.CLIENT);
+        //INSTANCE.registerMessage(MessageTileAlabasterOven.class, MessageTileAlabasterOven.class, 1, Side.CLIENT);
+        //INSTANCE.registerMessage(MessageTileEntityAludel.class, MessageTileEntityAludel.class, 2, Side.CLIENT);
        // INSTANCE.registerMessage(MessageTileEntityGlassBell.class, MessageTileEntityGlassBell.class, 3, Side.CLIENT);
        // INSTANCE.registerMessage(MessageKeyPressed.class, MessageKeyPressed.class, 4, Side.SERVER);
     }

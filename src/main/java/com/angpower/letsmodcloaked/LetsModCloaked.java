@@ -3,12 +3,14 @@ package com.angpower.letsmodcloaked;
 import com.angpower.letsmodcloaked.handler.ConfigurationHandler;
 import com.angpower.letsmodcloaked.handler.CraftingHandler;
 import com.angpower.letsmodcloaked.handler.FuelHandler;
+import com.angpower.letsmodcloaked.handler.GuiHandler;
 import com.angpower.letsmodcloaked.init.ModBlocks;
 import com.angpower.letsmodcloaked.init.ModItems;
 import com.angpower.letsmodcloaked.init.Recipes;
+import com.angpower.letsmodcloaked.network.PacketHandler;
 import com.angpower.letsmodcloaked.proxy.IProxy;
 import com.angpower.letsmodcloaked.reference.Reference;
-import com.angpower.letsmodcloaked.utility.LogHelper;
+import com.angpower.letsmodcloaked.util.LogHelper;
 import com.angpower.letsmodcloaked.world.gen.LMCBaseWorldGenerator;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
@@ -16,9 +18,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
-import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid= Reference.MOD_ID, name= Reference.MOD_NAME, version= Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class LetsModCloaked
@@ -34,7 +35,10 @@ public class LetsModCloaked
     {
         //network handling
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
-        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        PacketHandler.init();
+
+        proxy.registerKeybindings();
         //initialize items
         ModItems.init();
         //initialize blocks
@@ -46,15 +50,32 @@ public class LetsModCloaked
     public void Init(FMLInitializationEvent event)
 
     {
-        //register gui
+        // Register the GUI Handler
+        NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+
         //register tile entities
+        proxy.registerTileEntities();
+
+        // Initialize custom rendering and pre-load textures (Client only)
+        proxy.initRenderingAndTextures();
 
         //register crafting recipes
-        FMLCommonHandler.instance().bus().register(new CraftingHandler());
+        //FMLCommonHandler.instance().bus().register(new CraftingHandler());
+
+        // Register the Items Event Handler
+        proxy.registerEventHandlers();
+
+        //new register crafting recipes
+        CraftingHandler.init();
+
+        // register Recipes
         Recipes.init();
-        //general event handling
+
+       // register our fuels
         GameRegistry.registerFuelHandler(new FuelHandler());
+        // register our World gen
         GameRegistry.registerWorldGenerator(new LMCBaseWorldGenerator(), 0);
+
         LogHelper.info("Initialization Compleet!");
     }
 

@@ -1,4 +1,4 @@
-package com.angpower.letsmodcloaked.utility;
+package com.angpower.letsmodcloaked.util;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;

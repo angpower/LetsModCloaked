@@ -1,5 +1,6 @@
 package com.angpower.letsmodcloaked.item;
 
+import com.angpower.letsmodcloaked.reference.Names;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
@@ -16,7 +17,7 @@ public class ItemVanadiumAxe extends ItemToolLMC
     public ItemVanadiumAxe()
     {
         super(3.0f, ToolMaterial.EMERALD, blocksEffectiveAgainst);
-        this.setUnlocalizedName("vanadium_axe");
+        this.setUnlocalizedName(Names.Tools.VANADIUM_AXE);
         this.setTextureName("vanadium_axe");
         this.setMaxStackSize(1);
         this.setNoRepair();

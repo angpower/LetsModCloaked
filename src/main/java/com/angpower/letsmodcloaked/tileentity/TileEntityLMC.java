@@ -24,6 +24,7 @@ public class TileEntityLMC extends TileEntity
     }
 
     public ForgeDirection getOrientation()
+
     {
         return orientation;
     }

@@ -1,7 +1,7 @@
 package com.angpower.letsmodcloaked.block;
 
 import com.angpower.letsmodcloaked.creativetab.CreativeTabLMC;
-import com.angpower.letsmodcloaked.reference.Reference;
+import com.angpower.letsmodcloaked.reference.Textures;
 import com.angpower.letsmodcloaked.tileentity.TileEntityLMC;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -37,7 +37,7 @@ public class BlockLMC extends Block
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("tile.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
         //tile.modid:blockname.name
     }
 
@@ -45,6 +45,7 @@ public class BlockLMC extends Block
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister)
     {
+        //blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
         blockIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 

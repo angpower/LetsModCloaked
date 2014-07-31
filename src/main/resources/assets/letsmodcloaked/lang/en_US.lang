@@ -4,7 +4,7 @@
 itemGroup.letsmodcloaked=Let's Mod Cloaked
 
 # Items
-item.letsmodcloaked:mapleLeaf.name=Maple Leaf of Awesomeness
+item.letsmodcloaked:mapleleaf.name=Maple Leaf of Awesomeness
 item.letsmodcloaked:tin_cog.name=Tin Cog
 item.letsmodcloaked:copper_ingot.name=Copper Ingot
 item.letsmodcloaked:vanadium_ingot.name=Vanadium Ingot
@@ -36,12 +36,12 @@ tile.letsmodcloaked:vanadium_ore.name=Vanadium Ore
 tile.letsmodcloaked:rhodium_ore.name=Rhodium Ore
 tile.letsmodcloaked:peridium_ore.name=Peridium Ore
 tile.letsmodcloaked:aludel.name=Pahi aludel Test
-tile.letsmodcloaked:bomb.name=Super Bomb
+tile.letsmodcloaked:alabasteroven.name=Alabaster Oven
 tile.letsmodcloaked:copper_block.name=Copper Block
 tile.letsmodcloaked:stonefurnace.name=Stone Furnace
 
 # GUIs
-container.letsmodcloaked:
+container.letsmodcloaked:alabasteroven=Alabaster Oven
 
 
 # Commands

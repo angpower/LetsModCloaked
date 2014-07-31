@@ -1,7 +1,9 @@
 package com.angpower.letsmodcloaked.item;
 
 import com.angpower.letsmodcloaked.creativetab.CreativeTabLMC;
+import com.angpower.letsmodcloaked.reference.Names;
 import com.angpower.letsmodcloaked.reference.Reference;
+import com.angpower.letsmodcloaked.reference.Textures;
 import com.google.common.collect.ImmutableSet;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -17,7 +19,7 @@ public class ItemVanadiumHoe extends ItemHoe
     {
         super(ToolMaterial.EMERALD);
         this.setCreativeTab(CreativeTabLMC.LMC_TAB);
-        this.setUnlocalizedName("vanadium_hoe");
+        this.setUnlocalizedName(Names.Tools.VANADIUM_HOE);
         this.setTextureName("vanadium_hoe");
         this.setMaxStackSize(1);
         this.setNoRepair();
@@ -26,13 +28,13 @@ public class ItemVanadiumHoe extends ItemHoe
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack)
     {
-        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
         //item.modid:itemname.name
     }
 

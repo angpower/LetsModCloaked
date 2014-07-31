@@ -22,7 +22,7 @@ group= "com.angpower.letsmodcloaked" // http://maven.apache.org/guides/mini/guid
 archivesBaseName = "LetsModCloaked"
 
 minecraft {
-    version = "1.7.10-10.13.0.1179"
+    version = "1.7.10-10.13.0.1180"
     assetDir = "eclipse/assets"
 }
 

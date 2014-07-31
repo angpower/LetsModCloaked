@@ -1,6 +1,6 @@
 package com.angpower.letsmodcloaked.reference;
 
-import com.angpower.letsmodcloaked.utility.ResourceLocationHelper;
+import com.angpower.letsmodcloaked.util.ResourceLocationHelper;
 import net.minecraft.util.ResourceLocation;
 
 public class Textures
@@ -16,6 +16,7 @@ public class Textures
     {
         private static final String MODEL_TEXTURE_LOCATION = "textures/models/";
         public static final ResourceLocation ALUDEL = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "aludel.png");
+        public static final ResourceLocation OBSIDIAN_TABLE = ResourceLocationHelper.getResourceLocation(MODEL_TEXTURE_LOCATION + "ModelObsidianTable.png");
     }
 
     public static final class Gui
@@ -23,7 +24,8 @@ public class Textures
         private static final String GUI_SHEET_LOCATION = "textures/gui/";
 
         //public static final ResourceLocation ALUDEL = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "aludel.png");
-        //public static final ResourceLocation PORTABLE_CRAFTING = new ResourceLocation("textures/gui/container/crafting_table.png");
+        //public static final ResourceLocation ALABASTER_OVEN = new ResourceLocation("textures/gui/container/crafting_table.png");
+        public static final ResourceLocation ALABASTER_OVEN = ResourceLocationHelper.getResourceLocation(GUI_SHEET_LOCATION + "alabaster_oven.png");
     }
 
     public static final class Effect

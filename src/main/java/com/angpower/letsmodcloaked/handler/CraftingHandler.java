@@ -10,6 +10,11 @@ import net.minecraft.item.ItemStack;
 public class CraftingHandler
 {
 
+    public static void init()
+    {
+
+    }
+
     @SubscribeEvent
     public void onCrafting(PlayerEvent.ItemCraftedEvent event)
     {

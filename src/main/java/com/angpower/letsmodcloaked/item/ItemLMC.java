@@ -2,6 +2,7 @@ package com.angpower.letsmodcloaked.item;
 
 import com.angpower.letsmodcloaked.creativetab.CreativeTabLMC;
 import com.angpower.letsmodcloaked.reference.Reference;
+import com.angpower.letsmodcloaked.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -19,13 +20,13 @@ public class ItemLMC extends Item
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack)
     {
-        return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
         //item.modid:itemname.name
     }
 

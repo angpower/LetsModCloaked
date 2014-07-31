@@ -1,13 +1,14 @@
 package com.angpower.letsmodcloaked.block;
 
 
+import com.angpower.letsmodcloaked.reference.Names;
+
 public class BlockRhodiumOre extends BlockLMC
 {
     public BlockRhodiumOre()
     {
         super();
-        this.setBlockName("rhodium_ore");
-        this.setBlockTextureName("rhodium_ore");
+        this.setBlockName(Names.Blocks.RHODIUM_ORE);
         this.setHardness(3F);
         this.setResistance(5F);
         this.setStepSound(soundTypeStone);

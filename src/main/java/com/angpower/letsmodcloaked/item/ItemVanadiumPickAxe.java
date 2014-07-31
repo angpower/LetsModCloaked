@@ -1,25 +1,28 @@
 package com.angpower.letsmodcloaked.item;
 
 
+import com.angpower.letsmodcloaked.reference.Material;
+import com.angpower.letsmodcloaked.reference.Names;
+import com.angpower.letsmodcloaked.reference.Textures;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
+
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.ForgeHooks;
 
 import java.util.Set;
 
-public class ItemVanadiumPickAxe extends ItemToolLMC
+public class ItemVanadiumPickAxe extends ItemToolModalLMC
 {
     private static final Set blocksEffectiveAgainst = Sets.newHashSet(new Block[]{Blocks.cobblestone, Blocks.double_stone_slab, Blocks.stone_slab, Blocks.stone, Blocks.sandstone, Blocks.mossy_cobblestone, Blocks.iron_ore, Blocks.iron_block, Blocks.coal_ore, Blocks.gold_block, Blocks.gold_ore, Blocks.diamond_ore, Blocks.diamond_block, Blocks.ice, Blocks.netherrack, Blocks.lapis_ore, Blocks.lapis_block, Blocks.redstone_ore, Blocks.lit_redstone_ore, Blocks.rail, Blocks.detector_rail, Blocks.golden_rail, Blocks.activator_rail});
 
 
     public ItemVanadiumPickAxe()
     {
-        super(2f, ToolMaterial.EMERALD, blocksEffectiveAgainst);
-        this.setUnlocalizedName("vanadium_pickaxe");
+        super(2f, Material.Tools.VANADIUM, blocksEffectiveAgainst);
+        this.setUnlocalizedName(Names.Tools.VANADIUM_PICKAXE);
         this.setTextureName("vanadium_pickaxe");
         this.setMaxStackSize(1);
         this.setNoRepair();

@@ -1,6 +1,7 @@
 package com.angpower.letsmodcloaked.init;
 
 import com.angpower.letsmodcloaked.block.*;
+import com.angpower.letsmodcloaked.reference.Names;
 import com.angpower.letsmodcloaked.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -19,12 +20,13 @@ public class ModBlocks
     public static final BlockLMC peridium_ore = new BlockPeridiumOre();
 
     // Deco blocks
-    public static final BlockLMC aludel = new BlockAludel();
-    public static final BlockLMC bomb = new BlockBomb();
     public static final BlockLMC copper_block = new BlockCopperBlock();
 
     // tile entity's
-    public static final BlockLMC stonefurnace = new BlockStoneFurnace();
+    public static final BlockAlabasterOven alabaster_oven = new BlockAlabasterOven(false);
+    public static final BlockLMC aludel = new BlockAludel();
+    public static final BlockLMC stone_furnace = new BlockStoneFurnace();
+    public static final BlockLMC obsidian_table = new BlockObsidianTable();
 
 
     public static void init()
@@ -33,21 +35,21 @@ public class ModBlocks
         //---------------- register the Blocks -------------
 
         //ore's
-        GameRegistry.registerBlock(copper_ore, "copper_ore");
-        GameRegistry.registerBlock(tin_ore, "tin_ore");
-        GameRegistry.registerBlock(manganese_ore, "manganese_ore");
-        GameRegistry.registerBlock(vanadium_ore, "vanadium_ore");
-        GameRegistry.registerBlock(rhodium_ore, "rhodium_ore");
-        GameRegistry.registerBlock(peridium_ore, "peridium_ore");
+        GameRegistry.registerBlock(copper_ore, Names.Blocks.COPPER_ORE);
+        GameRegistry.registerBlock(tin_ore, Names.Blocks.TIN_ORE);
+        GameRegistry.registerBlock(manganese_ore, Names.Blocks.MANGANESE_ORE);
+        GameRegistry.registerBlock(vanadium_ore, Names.Blocks.VANADIUM_ORE);
+        GameRegistry.registerBlock(rhodium_ore, Names.Blocks.RHODIUM_ORE);
+        GameRegistry.registerBlock(peridium_ore, Names.Blocks.PERIDIUM_ORE);
 
         //Deco blocks
-
-        GameRegistry.registerBlock(bomb, "bomb");
-        GameRegistry.registerBlock(copper_block, "copper_block");
+        GameRegistry.registerBlock(copper_block, Names.Blocks.COPPER_BLOCK);
 
         //tile entity's
-        GameRegistry.registerBlock(aludel, "Aludel");
-        GameRegistry.registerBlock(stonefurnace, "stonefurnace");
+        GameRegistry.registerBlock(alabaster_oven, Names.Blocks.ALABASTER_OVEN);
+        GameRegistry.registerBlock(aludel, Names.Blocks.ALUDEL);
+        GameRegistry.registerBlock(stone_furnace, Names.Blocks.STONE_FURNACE);
+        GameRegistry.registerBlock(obsidian_table, Names.Blocks.OBSIDIAN_TABLE);
 
     }
 }

@@ -1,5 +1,6 @@
 package com.angpower.letsmodcloaked.item;
 
+import com.angpower.letsmodcloaked.reference.Names;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
@@ -15,7 +16,7 @@ public class ItemVanadiumShovel extends ItemToolLMC
     public ItemVanadiumShovel()
     {
         super(1.0f, ToolMaterial.EMERALD, blocksEffectiveAgainst);
-        this.setUnlocalizedName("vanadium_shovel");
+        this.setUnlocalizedName(Names.Tools.VANADIUM_SHOVEL);
         this.setTextureName("vanadium_shovel");
         this.setMaxStackSize(1);
         this.setNoRepair();

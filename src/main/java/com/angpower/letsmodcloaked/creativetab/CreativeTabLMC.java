@@ -18,14 +18,5 @@ public class CreativeTabLMC
             return ModItems.mapleleaf;
         }
 
-        /*
-        @Override
-        @SideOnly(Side.CLIENT)
-        public String getTranslatedTabLabel()
-        {
-            return StatCollector.translateToLocal(Reference.MOD_NAME);
-        }
-        */
-
     };
 }

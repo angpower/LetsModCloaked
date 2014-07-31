@@ -1,14 +1,15 @@
 package com.angpower.letsmodcloaked.block;
 
 
+import com.angpower.letsmodcloaked.reference.Names;
+
 public class BlockTinOre extends BlockLMC
 {
     public BlockTinOre()
     {
 
         super();
-        this.setBlockName("tin_ore");
-        this.setBlockTextureName("tin_ore");
+        this.setBlockName(Names.Blocks.TIN_ORE);
         this.setHardness(3F);
         this.setResistance(5F);
         this.setStepSound(soundTypeStone);
