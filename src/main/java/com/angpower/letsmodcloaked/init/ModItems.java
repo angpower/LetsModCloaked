@@ -22,6 +22,7 @@ public class ModItems
     public static final ItemLMC vanadium_ingot = new ItemVanadiumIngot();
     public static final ItemLMC tin_ingot = new ItemTinIngot();
     public static final ItemLMC manganese_ingot = new ItemManganeseIngot();
+    public static final ItemLMC rainbow_ingot = new ItemRainbowIngot();
 
     // Tools
     public static final ItemToolLMC vanadium_pickaxe = new ItemVanadiumPickAxe();
@@ -55,6 +56,7 @@ public class ModItems
         GameRegistry.registerItem(vanadium_ingot, Names.Items.VANADIUM_INGOT);
         GameRegistry.registerItem(tin_ingot, Names.Items.TIN_INGOT);
         GameRegistry.registerItem(manganese_ingot, Names.Items.MANGANESE_INGOT);
+        GameRegistry.registerItem(rainbow_ingot, Names.Items.RAINBOW_INGOT);
 
         // Tools
         GameRegistry.registerItem(vanadium_pickaxe, Names.Tools.VANADIUM_PICKAXE);

@@ -24,6 +24,7 @@ public class Names
         public static final String MANGANESE_INGOT = "manganese_ingot";
         public static final String MAPLE_LEAF = "mapleleaf";
         public static final String VANADIUM_INGOT = "vanadium_ingot";
+        public static final String RAINBOW_INGOT = "rainbow_ingot";
         public static final String TIN_COG = "tin_cog";
         public static final String PERIDIUM = "peridium";
         public static final String RHODIUM = "rhodium";

@@ -12,6 +12,7 @@ item.letsmodcloaked:tin_ingot.name=Tin Ingot
 item.letsmodcloaked:manganese_ingot.name=Manganese Ingot
 item.letsmodcloaked:peridium.name=Peridium
 item.letsmodcloaked:rhodium.name=Rhodium
+item.letsmodcloaked:rainbow_ingot.name=Rainbow Ingot
 
 # Tools
 item.letsmodcloaked:vanadium_pickaxe.name=Vanadium Pickaxe
@@ -36,12 +37,12 @@ tile.letsmodcloaked:vanadium_ore.name=Vanadium Ore
 tile.letsmodcloaked:rhodium_ore.name=Rhodium Ore
 tile.letsmodcloaked:peridium_ore.name=Peridium Ore
 tile.letsmodcloaked:aludel.name=Pahi aludel Test
-tile.letsmodcloaked:alabasteroven.name=Alabaster Oven
+tile.letsmodcloaked:alabaster_oven.name=Alabaster Oven
 tile.letsmodcloaked:copper_block.name=Copper Block
-tile.letsmodcloaked:stonefurnace.name=Stone Furnace
+tile.letsmodcloaked:stone_furnace.name=Stone Furnace
 
 # GUIs
-container.letsmodcloaked:alabasteroven=Alabaster Oven
+container.letsmodcloaked:alabaster_oven=Alabaster Oven
 
 
 # Commands
